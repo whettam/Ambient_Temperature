@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Ambient Temperature</string>
+    <string name="textview">TextView</string>
+    <string name="hello_world">The Ambient temperature is </string>
 </resources>
