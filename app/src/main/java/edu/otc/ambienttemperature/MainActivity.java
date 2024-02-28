@@ -35,11 +35,9 @@ public class MainActivity extends AppCompatActivity {
         System.out.println(currentTemp);
 
 
-        String activeTemp = String.valueOf(convertToFarenheit(currentTemp));//convert to farenheit
-        TextView tempTextView = (TextView) findViewById(R.id.textView);
-        tempTextView.setText((activeTemp));
-
-
+        String activeTemp = String.valueOf(convertToFarenheit(currentTemp));// convert to farenheit
+        TextView tempTextView = (TextView) findViewById(R.id.textView);// getting id of where the text is
+        tempTextView.setText((activeTemp));// setting the temperature in the textview
 
     }
 
@@ -61,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
 //        );
 //    }
 
+    // converts celsius to farenheit
     public int convertToFarenheit(int currentTemp) {
         return (currentTemp * 9/5) + 32;
     }
